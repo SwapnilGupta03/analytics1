@@ -28,3 +28,4 @@ summary(fit)
 
 finalmodel = lm(mpg ~ wt + hp, data = train)
 (predictedvalues = predict(finalmodel, ndata = test))
+cbind(test$mpg, predictedvalues)
